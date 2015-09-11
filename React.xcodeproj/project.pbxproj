@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CBC3C3BB1BA3222700251F19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C3BA1BA3222700251F19 /* AppDelegate.swift */; };
-		CBC3C3BD1BA3222700251F19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C3BC1BA3222700251F19 /* ViewController.swift */; };
-		CBC3C3C01BA3222700251F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC3C3BE1BA3222700251F19 /* Main.storyboard */; };
 		CBC3C3C21BA3222700251F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC3C3C11BA3222700251F19 /* Assets.xcassets */; };
 		CBC3C3C51BA3222700251F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC3C3C31BA3222700251F19 /* LaunchScreen.storyboard */; };
 		CBC3C3D01BA3222700251F19 /* ReactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C3CF1BA3222700251F19 /* ReactTests.swift */; };
 		CBC3C3DB1BA3222700251F19 /* ReactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C3DA1BA3222700251F19 /* ReactUITests.swift */; };
+		CBC3C3F01BA3250700251F19 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC3C3ED1BA3250700251F19 /* RxBlocking.framework */; };
+		CBC3C3F11BA3250700251F19 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBC3C3ED1BA3250700251F19 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBC3C3F21BA3250700251F19 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC3C3EE1BA3250700251F19 /* RxCocoa.framework */; };
+		CBC3C3F31BA3250700251F19 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBC3C3EE1BA3250700251F19 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBC3C3F41BA3250700251F19 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC3C3EF1BA3250700251F19 /* RxSwift.framework */; };
+		CBC3C3F51BA3250700251F19 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBC3C3EF1BA3250700251F19 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBC3C3F81BA327E600251F19 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C3F71BA327E600251F19 /* CarViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C3FC1BA33EAD00251F19 /* ViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C3FB1BA33EAD00251F19 /* ViewModelBase.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C3FE1BA33F3E00251F19 /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C3FD1BA33F3E00251F19 /* ViewControllerBase.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C4011BA3423600251F19 /* ModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C4001BA3423600251F19 /* ModelFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C4031BA3426200251F19 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C4021BA3426200251F19 /* Car.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C4051BA3447400251F19 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C4041BA3447400251F19 /* CarViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C4081BA34C1A00251F19 /* CarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C4071BA34C1A00251F19 /* CarsViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C40A1BA34C7B00251F19 /* CarsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C4091BA34C7B00251F19 /* CarsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C40E1BA36F6F00251F19 /* Observables.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C40D1BA36F6F00251F19 /* Observables.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C4121BA376FA00251F19 /* TableViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C4111BA376FA00251F19 /* TableViewControllerBase.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,11 +47,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CBC3C3F61BA3250700251F19 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBC3C3F31BA3250700251F19 /* RxCocoa.framework in Embed Frameworks */,
+				CBC3C3F11BA3250700251F19 /* RxBlocking.framework in Embed Frameworks */,
+				CBC3C3F51BA3250700251F19 /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CBC3C3B71BA3222700251F19 /* React.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = React.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC3C3BA1BA3222700251F19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBC3C3BC1BA3222700251F19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBC3C3BF1BA3222700251F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBC3C3C11BA3222700251F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBC3C3C41BA3222700251F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBC3C3C61BA3222700251F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +75,19 @@
 		CBC3C3D61BA3222700251F19 /* ReactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC3C3DA1BA3222700251F19 /* ReactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactUITests.swift; sourceTree = "<group>"; };
 		CBC3C3DC1BA3222700251F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC3C3ED1BA3250700251F19 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		CBC3C3EE1BA3250700251F19 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		CBC3C3EF1BA3250700251F19 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		CBC3C3F71BA327E600251F19 /* CarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		CBC3C3FB1BA33EAD00251F19 /* ViewModelBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelBase.swift; sourceTree = "<group>"; };
+		CBC3C3FD1BA33F3E00251F19 /* ViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
+		CBC3C4001BA3423600251F19 /* ModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFactory.swift; sourceTree = "<group>"; };
+		CBC3C4021BA3426200251F19 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		CBC3C4041BA3447400251F19 /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		CBC3C4071BA34C1A00251F19 /* CarsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsViewModel.swift; sourceTree = "<group>"; };
+		CBC3C4091BA34C7B00251F19 /* CarsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsTableViewController.swift; sourceTree = "<group>"; };
+		CBC3C40D1BA36F6F00251F19 /* Observables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observables.swift; sourceTree = "<group>"; };
+		CBC3C4111BA376FA00251F19 /* TableViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC3C3F21BA3250700251F19 /* RxCocoa.framework in Frameworks */,
+				CBC3C3F01BA3250700251F19 /* RxBlocking.framework in Frameworks */,
+				CBC3C3F41BA3250700251F19 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +125,7 @@
 				CBC3C3CE1BA3222700251F19 /* ReactTests */,
 				CBC3C3D91BA3222700251F19 /* ReactUITests */,
 				CBC3C3B81BA3222700251F19 /* Products */,
+				CBC3C4061BA3476E00251F19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +142,11 @@
 		CBC3C3B91BA3222700251F19 /* React */ = {
 			isa = PBXGroup;
 			children = (
+				CBC3C3FF1BA3420700251F19 /* Factories */,
+				CBC3C3E81BA3243E00251F19 /* Models */,
+				CBC3C3E91BA3243E00251F19 /* ViewControllers */,
+				CBC3C3EB1BA3243E00251F19 /* ViewModels */,
 				CBC3C3BA1BA3222700251F19 /* AppDelegate.swift */,
-				CBC3C3BC1BA3222700251F19 /* ViewController.swift */,
-				CBC3C3BE1BA3222700251F19 /* Main.storyboard */,
 				CBC3C3C11BA3222700251F19 /* Assets.xcassets */,
 				CBC3C3C31BA3222700251F19 /* LaunchScreen.storyboard */,
 				CBC3C3C61BA3222700251F19 /* Info.plist */,
@@ -125,6 +172,54 @@
 			path = ReactUITests;
 			sourceTree = "<group>";
 		};
+		CBC3C3E81BA3243E00251F19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBC3C4021BA3426200251F19 /* Car.swift */,
+				CBC3C40D1BA36F6F00251F19 /* Observables.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBC3C3E91BA3243E00251F19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBC3C3FD1BA33F3E00251F19 /* ViewControllerBase.swift */,
+				CBC3C4111BA376FA00251F19 /* TableViewControllerBase.swift */,
+				CBC3C4041BA3447400251F19 /* CarViewController.swift */,
+				CBC3C4091BA34C7B00251F19 /* CarsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CBC3C3EB1BA3243E00251F19 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CBC3C3FB1BA33EAD00251F19 /* ViewModelBase.swift */,
+				CBC3C3F71BA327E600251F19 /* CarViewModel.swift */,
+				CBC3C4071BA34C1A00251F19 /* CarsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CBC3C3FF1BA3420700251F19 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				CBC3C4001BA3423600251F19 /* ModelFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		CBC3C4061BA3476E00251F19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBC3C3ED1BA3250700251F19 /* RxBlocking.framework */,
+				CBC3C3EE1BA3250700251F19 /* RxCocoa.framework */,
+				CBC3C3EF1BA3250700251F19 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +230,7 @@
 				CBC3C3B31BA3222700251F19 /* Sources */,
 				CBC3C3B41BA3222700251F19 /* Frameworks */,
 				CBC3C3B51BA3222700251F19 /* Resources */,
+				CBC3C3F61BA3250700251F19 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,7 +326,6 @@
 			files = (
 				CBC3C3C51BA3222700251F19 /* LaunchScreen.storyboard in Resources */,
 				CBC3C3C21BA3222700251F19 /* Assets.xcassets in Resources */,
-				CBC3C3C01BA3222700251F19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +350,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBC3C3BD1BA3222700251F19 /* ViewController.swift in Sources */,
+				CBC3C40E1BA36F6F00251F19 /* Observables.swift in Sources */,
+				CBC3C4121BA376FA00251F19 /* TableViewControllerBase.swift in Sources */,
+				CBC3C3FE1BA33F3E00251F19 /* ViewControllerBase.swift in Sources */,
+				CBC3C3FC1BA33EAD00251F19 /* ViewModelBase.swift in Sources */,
+				CBC3C4011BA3423600251F19 /* ModelFactory.swift in Sources */,
+				CBC3C4081BA34C1A00251F19 /* CarsViewModel.swift in Sources */,
+				CBC3C40A1BA34C7B00251F19 /* CarsTableViewController.swift in Sources */,
+				CBC3C3F81BA327E600251F19 /* CarViewModel.swift in Sources */,
+				CBC3C4031BA3426200251F19 /* Car.swift in Sources */,
 				CBC3C3BB1BA3222700251F19 /* AppDelegate.swift in Sources */,
+				CBC3C4051BA3447400251F19 /* CarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,14 +396,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CBC3C3BE1BA3222700251F19 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBC3C3BF1BA3222700251F19 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CBC3C3C31BA3222700251F19 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -398,6 +494,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = React/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.appiness.React;
@@ -409,6 +509,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = React/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.appiness.React;
