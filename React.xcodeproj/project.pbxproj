@@ -28,6 +28,9 @@
 		CBC3C40A1BA34C7B00251F19 /* CarsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C4091BA34C7B00251F19 /* CarsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CBC3C40E1BA36F6F00251F19 /* Observables.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C40D1BA36F6F00251F19 /* Observables.swift */; settings = {ASSET_TAGS = (); }; };
 		CBC3C4121BA376FA00251F19 /* TableViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C4111BA376FA00251F19 /* TableViewControllerBase.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C4171BA488ED00251F19 /* CarViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C4161BA488ED00251F19 /* CarViewModelTests.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C4201BA48C9500251F19 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C41F1BA48C9500251F19 /* CarTests.swift */; settings = {ASSET_TAGS = (); }; };
+		CBC3C4241BA494D700251F19 /* ObservablesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3C4231BA494D700251F19 /* ObservablesTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,11 @@
 		CBC3C4091BA34C7B00251F19 /* CarsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsTableViewController.swift; sourceTree = "<group>"; };
 		CBC3C40D1BA36F6F00251F19 /* Observables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observables.swift; sourceTree = "<group>"; };
 		CBC3C4111BA376FA00251F19 /* TableViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerBase.swift; sourceTree = "<group>"; };
+		CBC3C4161BA488ED00251F19 /* CarViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewModelTests.swift; sourceTree = "<group>"; };
+		CBC3C4181BA4892500251F19 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		CBC3C4191BA4892500251F19 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		CBC3C41F1BA48C9500251F19 /* CarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTests.swift; sourceTree = "<group>"; };
+		CBC3C4231BA494D700251F19 /* ObservablesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservablesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +165,9 @@
 		CBC3C3CE1BA3222700251F19 /* ReactTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBC3C4131BA488E000251F19 /* Models */,
+				CBC3C4141BA488E000251F19 /* ViewControllers */,
+				CBC3C4151BA488E000251F19 /* ViewModels */,
 				CBC3C3CF1BA3222700251F19 /* ReactTests.swift */,
 				CBC3C3D11BA3222700251F19 /* Info.plist */,
 			);
@@ -213,11 +224,37 @@
 		CBC3C4061BA3476E00251F19 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBC3C4181BA4892500251F19 /* Nimble.framework */,
+				CBC3C4191BA4892500251F19 /* Quick.framework */,
 				CBC3C3ED1BA3250700251F19 /* RxBlocking.framework */,
 				CBC3C3EE1BA3250700251F19 /* RxCocoa.framework */,
 				CBC3C3EF1BA3250700251F19 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBC3C4131BA488E000251F19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBC3C41F1BA48C9500251F19 /* CarTests.swift */,
+				CBC3C4231BA494D700251F19 /* ObservablesTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBC3C4141BA488E000251F19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CBC3C4151BA488E000251F19 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CBC3C4161BA488ED00251F19 /* CarViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +406,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBC3C3D01BA3222700251F19 /* ReactTests.swift in Sources */,
+				CBC3C4241BA494D700251F19 /* ObservablesTests.swift in Sources */,
+				CBC3C4201BA48C9500251F19 /* CarTests.swift in Sources */,
+				CBC3C4171BA488ED00251F19 /* CarViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +564,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReactTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.appiness.ReactTests;
@@ -536,6 +580,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReactTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.appiness.ReactTests;
@@ -587,6 +635,7 @@
 				CBC3C3E11BA3222700251F19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBC3C3E21BA3222700251F19 /* Build configuration list for PBXNativeTarget "ReactTests" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +644,7 @@
 				CBC3C3E41BA3222700251F19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBC3C3E51BA3222700251F19 /* Build configuration list for PBXNativeTarget "ReactUITests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +653,7 @@
 				CBC3C3E71BA3222700251F19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

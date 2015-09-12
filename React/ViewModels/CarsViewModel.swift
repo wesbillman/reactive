@@ -9,11 +9,20 @@
 import Foundation
 import RxSwift
 
-class CarsViewModel : ViewModelBase {
-    var cars = ObservableCollection<Car>()
+protocol CarsViewModelProtocol {
+    var cars:ObservableCollection<CarProtocol> { get }
+    func addCar(car:CarProtocol)
+}
+
+class CarsViewModel : ViewModelBase, CarsViewModelProtocol {
+    var cars = ObservableCollection<CarProtocol>()
     
-    init(cars:[Car]) {
+    init(cars:[CarProtocol]) {
         self.cars.appendContentsOf(cars)
         super.init()
+    }
+    
+    func addCar(car: CarProtocol) {
+        cars.insert(car, atIndex: 0)
     }
 }

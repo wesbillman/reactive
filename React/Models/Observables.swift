@@ -93,30 +93,6 @@ public class ObservableCollection<Element>: CollectionType, ArrayLiteralConverti
         collectionChanged.on(.Next(.Inserted(location: count - 1, element: element)))
     }
     
-    public func removeAll() {
-        let elements = source
-        source.removeAll()
-        collectionChanged.on(.Next(.RemovedRange(range: Range(start: source.startIndex, end: source.endIndex), elements: elements)))
-    }
-    
-    public func removeAtIndex(index: Int) -> Element {
-        let element = source.removeAtIndex(index)
-        collectionChanged.on(.Next(.Removed(location: index, element: element)))
-        return element
-    }
-    
-    public func removeFirst() -> Element {
-        let element = source.removeFirst()
-        collectionChanged.on(.Next(.Removed(location: 0, element: element)))
-        return element
-    }
-    
-    public func removeLast() -> Element {
-        let element = source.removeLast()
-        collectionChanged.on(.Next(.Removed(location: count + 1, element: element)))
-        return element
-    }
-    
     public func insert(element: Element, atIndex i: Int) {
         source.insert(element, atIndex: i)
         collectionChanged.on(.Next(.Inserted(location: i, element: element)))
@@ -127,6 +103,30 @@ public class ObservableCollection<Element>: CollectionType, ArrayLiteralConverti
         let elements = Array(newElements)
         source.appendContentsOf(newElements)
         collectionChanged.on(.Next(.AddedRange(range: Range(start: index, end: index+elements.count), elements: elements)))
+    }
+
+    public func removeAtIndex(index: Int) -> Element {
+        let element = source.removeAtIndex(index)
+        collectionChanged.on(.Next(.Removed(location: index, element: element)))
+        return element
+    }
+
+    public func removeFirst() -> Element {
+        let element = source.removeFirst()
+        collectionChanged.on(.Next(.Removed(location: 0, element: element)))
+        return element
+    }
+    
+    public func removeLast() -> Element {
+        let element = source.removeLast()
+        collectionChanged.on(.Next(.Removed(location: count, element: element)))
+        return element
+    }
+    
+    public func removeAll() {
+        let elements = source
+        source.removeAll()
+        collectionChanged.on(.Next(.RemovedRange(range: Range(start: elements.startIndex, end: elements.endIndex), elements: elements)))
     }
     
     public func replaceRange<C : CollectionType where C.Generator.Element == Element>(range: Range<Int>, with elements: C) {

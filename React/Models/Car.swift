@@ -9,7 +9,14 @@
 import Foundation
 import RxSwift
 
-class Car {
+protocol CarProtocol {
+    var name:Variable<String> { get set }
+    var running:Variable<Bool> { get set }
+    func start()
+    func stop()
+}
+
+class Car : CarProtocol {
     var name = Variable("")
     var running = Variable(false)
     

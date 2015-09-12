@@ -61,7 +61,7 @@ class CarsTableViewController: TableViewControllerBase {
                 let okAction = UIAlertAction(title: "OK", style: .Default, handler: { action in
                     let name = alertView.textFields?.first
                     if let text = name?.text {
-                        self.viewModel.cars.insert(Car(name: text), atIndex: 0)
+                        self.viewModel.addCar(Car(name: text))
                     }
                 })
                 alertView.addAction(okAction)

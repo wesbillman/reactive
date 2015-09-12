@@ -10,9 +10,9 @@ import Foundation
 import RxSwift
 
 class CarViewModel : ViewModelBase {
-    var car:Car
+    var car:CarProtocol
     
-    init(car:Car) {
+    init(car:CarProtocol) {
         self.car = car
         super.init()
     }
