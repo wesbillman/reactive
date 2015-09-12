@@ -1,13 +1,13 @@
 //
 //  CarViewModelTests.swift
-//  React
+//  Reactive
 //
 //  Created by Wes Billman on 9/12/15.
 //  Copyright © 2015 Wes Billman. All rights reserved.
 //
 
 import XCTest
-@testable import React
+@testable import Reactive
 
 class CarViewModelTests : XCTestCase {
 

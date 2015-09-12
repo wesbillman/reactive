@@ -1,6 +1,6 @@
 //
 //  Observables.swift
-//  WatchIt
+//  Reactive
 //
 //  Created by Alec Thomas on 8/09/2015.
 //  Copyright © 2015 SwapOff. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  ObservablesTests.swift
-//  React
+//  Reactive
 //
 //  Created by Wes Billman on 9/12/15.
 //  Copyright © 2015 Wes Billman. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 import RxSwift
-@testable import React
+@testable import Reactive
 
 class ObservablesTests: XCTestCase {
     var collection:ObservableCollection<String>!

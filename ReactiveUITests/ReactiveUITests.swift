@@ -1,14 +1,14 @@
 //
-//  ReactUITests.swift
-//  ReactUITests
+//  ReactiveUITests.swift
+//  ReactiveUITests
 //
-//  Created by Wes Billman on 9/11/15.
+//  Created by Wes Billman on 9/12/15.
 //  Copyright © 2015 Wes Billman. All rights reserved.
 //
 
 import XCTest
 
-class ReactUITests: XCTestCase {
+class ReactiveUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
